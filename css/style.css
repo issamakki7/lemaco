@@ -256,15 +256,37 @@ button {
 .header {
      width: 100%;
      height:100%;
-     padding: 24px 60px;
+     padding: 24px 64px;
      background: #fff;
 }
 
 .logo a img {
      position: relative;
-     width: 35%;
+     width: 100%;
+     bottom: 0.4rem;
 }
 
+/* Media query for tablet */
+@media (max-width: 1268px) {
+     .logo a img {
+         width: 100%;
+         top: 0.5rem;
+     }
+  
+ }
+
+
+ 
+ /* Media query for mobile */
+ @media (max-width: 580px) {
+     .logo a img {
+         width: 60%;
+         top: 0.5rem;
+     } 
+ }
+
+
+/* 
 .logo::before {
      position: absolute;
      content: "";
@@ -272,8 +294,7 @@ button {
      height: 86px;
      left: -75px;
      top: -24px;
-}
-
+} */
 
 /*-- navigation--*/
 
@@ -283,14 +304,11 @@ button {
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
-     padding: 8px 15px;
      color: #2e2d2d;
      font-size: 16px;
      line-height: 25px;
      font-weight: 500;
 }
-
-
 
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
 .navigation.navbar-dark .navbar-nav .nav-link:hover {
@@ -306,9 +324,11 @@ button {
      background-color: #d1d9e6;
 }
 
-.navbar-expand-md .navbar-nav {
+.navbar-expand-xl .navbar-nav {
      padding-right: 10px;
 }
+
+
 
 ul.social_icon {
      padding-top: 3px;
@@ -337,12 +357,108 @@ ul.social_icon li a:hover {
      background-color: #435a7d;
 }
 
+
+ @media (max-width: 1268px) {
+     .social_icon{
+          display: none;
+     }
+  
+ }
+ 
+
+
+
 .navbar-nav .nav-item:hover .nav-link {
      color: #d1d9e6; 
  }
 
+    /* Hero section styles */
+    .hero {
+     position: relative;
+     text-align: center;
+     padding: 6.2rem 0;
+     height: 100%;
+  }
+
+  .hero-background {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     
+  }
+
+  .hero-background video {
+     object-fit: fill;
+     width: 100%;
+     height: 100%;
+  }
+
+  .hero-buttons{
+     margin-top: 18rem;
+  }
+  
+  .hero-info{
+     color: #ffff;
+     margin-right: 1.1rem;
+  }
+
+  .btn-contact {
+     font-size: 18px;
+     padding: 10px 30px;
+     background-color: #435a7d;
+     color: #fff;
+     text-align: center;
+  }
+
+  .btn-contact:hover {
+     font-size: 18px;
+     padding: 10px 30px;
+     color: #000000;
+     background-color: #d1d9e6 ;
+     text-align: center;
+     margin-top: 2rem;
+  }
+
+  .social-buttons {
+     margin-top: 30px;
+  }
+
+  .btn-social {
+     font-size: 24px;
+     margin: 0 10px;
+  }
+
+  .btn-social i {
+     color: #232f41;
+  }
+
+
 
 /** banner section **/
+
+.banner {
+     padding: 5rem 0;
+     height: 100%;
+     background-color: #d1d9e6 ;
+  }
+  
+  .banner h1  {
+     font-size: 2.5rem; /* Adjust the font size as needed */
+     color: #333; /* Adjust the text color as needed */
+     padding: 20px; /* Add padding to center the text vertically */
+     margin: 0; /* Remove any default margin */
+  }
+  
+  .banner-buttons {
+     margin-top: 10px; /* Adjust the top margin as needed */
+  }
+  
+
+
+
 
 .banner_main::before {
      position: absolute;
@@ -396,10 +512,23 @@ ul.social_icon li a:hover {
      background-color: #d1d9e6 ;
 }
 
-.bann_img {
-     padding-left: 59px;
-     padding-right: 20px;
+
+
+.banner-btn{
+     font-size: 18px;
+     padding: 10px 30px;
+     background-color: #435a7d;
+     color: #fff;
+     text-align: center;
 }
+
+.banner-btn:hover {
+     font-size: 18px;
+     padding: 10px 30px;
+     color: #000000;
+     background-color: #acc0e0 ;
+     text-align: center;
+  }
 
 #myCarousel .carousel-control-prev,
 #myCarousel .carousel-control-next {
@@ -448,9 +577,40 @@ ul.social_icon li a:hover {
 
 /** end banner section **/
 
+
+
+/* Development */
+
+#development {
+     position: relative;
+   }
+   
+   #development::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(67, 90, 125, 0.5); /* Color with 50% opacity */
+     pointer-events: none; /* Allow interactions with content beneath */
+   }
+   
+   /* Customize the dots background here */
+   #development::before {
+     background-image: url("../images/dots2.svg");
+     /* background-size: 30px 30px; */
+     opacity: 0.2;
+   }
+
+   
+   
+   
+
 .titlepage {
      text-align: center;
      padding-bottom: 40px;
+     margin-top: 2rem;
 }
 
 .titlepage h2 {
@@ -462,11 +622,162 @@ ul.social_icon li a:hover {
      margin: 0;
 }
 
+.d-block{
+     object-fit: cover;
+     display: block;
+     align-items: center;
+     width: 100%;
+}
+
 .d_flex {
      display: flex;
      align-items: center;
      flex-wrap: wrap;
+     width: 100%;
 }
+
+
+
+/* Real Estate */
+
+#realestate {
+     position: relative;
+   }
+   
+   #realestate::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(67, 90, 125, 0.5); /* Color with 50% opacity */
+     pointer-events: none; /* Allow interactions with content beneath */
+   }
+   
+   /* Customize the dots background here */
+   #realestate::before {
+     background-image: url("../images/dots1.jpg");
+     opacity: 0.1;
+   }
+
+/* End of Real Estate */
+
+/* Projects */
+
+
+#projects {
+     position: relative;
+     padding-bottom: 2rem;
+   }
+   
+   #projects::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(67, 90, 125, 0.5); /* Color with 50% opacity */
+     pointer-events: none; /* Allow interactions with content beneath */
+
+   }
+   
+   /* Customize the dots background here */
+   #projects::before {
+     background-image: url("../images/dots2.svg");
+     opacity: 0.2;
+   }
+
+   .projects-title{
+     text-align: center;
+     padding-bottom: 40px;
+   }
+   
+   .projects-title h2{
+     position: relative;
+     font-size: 45px;
+     color: #435a7d;
+     line-height: 45px;
+     font-weight: bold;
+     padding: 2rem 0 0 0;
+
+   }
+
+/* End of Projects */
+
+/* Properties */
+#properties {
+     position: relative;
+     padding-top: 2rem;
+   }
+   
+   #properties::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(67, 90, 125, 0.5); /* Color with 50% opacity */
+     pointer-events: none; /* Allow interactions with content beneath */
+   }
+   
+   /* Customize the dots background here */
+   #properties::before {
+     background-image: url("../images/dots1.jpg");
+     opacity: 0.1;
+   }
+
+   .properties-title{
+     text-align: center;
+     padding-bottom: 40px;
+   }
+   
+   .properties-title h2{
+     position: relative;
+     font-size: 45px;
+     color: #435a7d;
+     line-height: 45px;
+     font-weight: bold;
+     padding: 0 0 0 0;
+
+   }
+
+/* End of Properties */
+
+
+/* Partners */
+#partners {
+     position: relative;
+   }
+   
+   #partners::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(67, 90, 125, 0.5); /* Color with 50% opacity */
+     pointer-events: none; /* Allow interactions with content beneath */
+   }
+   
+   /* Customize the dots background here */
+   #partners::before {
+     background-image: url("../images/dots2.svg");
+     opacity: 0.1;
+   }
+
+ 
+
+
+
+/* End of Partners */
+
+
+
+
 
 .read_more {
      font-size: 17px;
@@ -538,9 +849,9 @@ ul.social_icon li a:hover {
 
 .about {
      background-color: #fff;
-     padding-top: 90px;
+     padding-top: 4rem;
      position: relative;
-     padding-bottom: 170px;
+     padding-bottom: 1rem;
 }
 
 
@@ -663,7 +974,7 @@ ul.social_icon li a:hover {
 
 .experts {
      background-color: #fff;
-     padding: 50px 0 50px 0;
+     padding: 0px 0 50px 0;
      position: relative;
 }
 
@@ -738,6 +1049,8 @@ ul.social_icon li a:hover {
 
 
 /* Products section */
+
+
 
 .shop_section .heading_container {
      margin-bottom: 20px;
@@ -822,7 +1135,6 @@ ul.social_icon li a:hover {
          -ms-flex-pack: center;
              justify-content: center;
      margin-top: 45px;
-     margin-bottom: 6rem;
    }
    
    .shop_section .btn-box a {
@@ -850,18 +1162,24 @@ ul.social_icon li a:hover {
 
 .contact {
      background: #fff;
-     margin-top: 90px;
+     margin-top: 0px;
      position: relative;
 }
 
 .contact::before {
-     position: absolute;
      content: "";
-     right: 0;
-     width: 156px;
-     height: 283px;
-     top: 14%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-image: url("../images/dots1.jpg");
+     opacity: 0.1;
 }
+
+
+
+
 
 .main_form .contactus {
      border: #fff solid 1px;
@@ -1130,10 +1448,28 @@ ul.link_menu li a:hover {
      margin: 0 !important;
 }
 
-/* Project */
 
-
-
-/* End Project */
-
-
+/* Create a container for the dots */
+.dot-container {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     pointer-events: none; /* Prevents dots from interfering with other elements */
+     z-index: -1; /* Places dots behind other content */
+   }
+   
+   /* Define the dot styles */
+   .dot {
+     width: 8px;
+     height: 8px;
+     background-color: #435a7d; /* Color of the dots */
+     border-radius: 50%;
+     position: absolute;
+     opacity: 0.9;
+     animation-duration: 4s; /* Adjust the duration as needed */
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+   }
+   
