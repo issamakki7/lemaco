@@ -47,7 +47,11 @@ body {
      font-family: 'Poppins', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
+     margin: 0;
+     padding: 0;
 }
+
+
 
 a {
      color: #1f1f1f;
@@ -206,17 +210,7 @@ button {
      cursor: pointer;
 }
 
-.full {
-     float: left;
-     width: 100%;
-}
 
-.full {
-     width: 100%;
-     float: left;
-     margin: 0;
-     padding: 0;
-}
 
 
 /**-- heading section --**/
@@ -253,195 +247,144 @@ button {
 
 /*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
 
-.header {
-     width: 100%;
-     height:100%;
-     padding: 24px 64px;
-     background: #fff;
-}
 
-.logo a img {
-     position: relative;
-     width: 100%;
-     bottom: 0.4rem;
-}
 
-/* Media query for tablet */
-@media (max-width: 1268px) {
-     .logo a img {
-         width: 100%;
-         top: 0.5rem;
-     }
-  
+/* Navbar */
+/* Navbar Background Color and Text Color */
+.navbar {
+     background-color: #ffff; /* Change this color to your desired background color */
+     color: #fff; /* Text color */
  }
-
-
  
- /* Media query for mobile */
- @media (max-width: 580px) {
-     .logo a img {
-         width: 60%;
-         top: 0.5rem;
-     } 
+ /* Navbar Brand (Logo) */
+ .navbar-brand {
+     font-size: 14px;
+     font-weight: bold;
+     color: #fff; /* Logo text color */
  }
-
-
-/* 
-.logo::before {
-     position: absolute;
-     content: "";
-     width: 385px;
-     height: 86px;
-     left: -75px;
-     top: -24px;
-} */
-
-/*-- navigation--*/
-
-.navigation.navbar {
-     float: right;
-     padding: 0;
-}
-
-.navigation.navbar-dark .navbar-nav .nav-link {
-     color: #2e2d2d;
+ 
+ /* Navbar Links */
+ .navbar-nav .nav-link {
      font-size: 16px;
-     line-height: 25px;
-     font-weight: 500;
-}
-
-.navigation.navbar-dark .navbar-nav .nav-link:focus,
-.navigation.navbar-dark .navbar-nav .nav-link:hover {
-     color: #2b2b2b;
-     background-color: #d1d9e6;
-}
-
-.navigation.navbar-dark .navbar-nav .active>.nav-link,
-.navigation.navbar-dark .navbar-nav .nav-link.active,
-.navigation.navbar-dark .navbar-nav .nav-link.show,
-.navigation.navbar-dark .navbar-nav .show>.nav-link {
-     color: #2b2b2b;
-     background-color: #d1d9e6;
-}
-
-.navbar-expand-xl .navbar-nav {
-     padding-right: 10px;
-}
-
-
-
-ul.social_icon {
-     padding-top: 3px;
-     float: right;
-}
-
-ul.social_icon li {
-     display: inline-block;
-}
-
-ul.social_icon li a {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     font-size: 17px;
-     border-radius: 30px;
-     margin: 0 3px;
-     color: #2b2b2b;
-     background-color: #d1d9e6;
-     width: 32px;
-     height: 32px;
-}
-
-ul.social_icon li a:hover {
+     color: #2b2b2b; /* Link text color */
+     padding: 10px 20px;
+     transition: background-color 0.3s ease;
+ }
+ 
+ .navbar-nav .nav-link:hover {
+     background-color: #d1d9e6; /* Change this color for link hover effect */
+     border-radius: 5px; /* Rounded corners on hover */
      color: #ffff;
-     background-color: #435a7d;
-}
+ }
+ 
+ /* .navbar-toggler{
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+     color: rgba(0, 0, 0, 0.5);
+     border-color: rgba(0, 0, 0, 0.1);
+   
 
+ }
 
- @media (max-width: 1268px) {
-     .social_icon{
-          display: none;
+ /* Toggle button color */
+ .navbar-toggler-icon {
+     display: inline-block;
+     width: 1.5em;
+     height: 1.5em;
+     vertical-align: middle;
+     content: "";
+     background: no-repeat center center;
+     background-size: 100% 100%;
+ } */
+ 
+ /* Active Link Styles */
+ .navbar-nav .nav-item.active .nav-link {
+     background-color: #2e3034; /* Change this color for active link */
+     border-radius: 5px; /* Rounded corners for active link */
+ }
+ 
+ /* Responsive Navbar Brand (Logo) for Small Screens */
+ @media (max-width: 768px) {
+     .navbar-brand {
+         font-size: 20px;
      }
-  
  }
  
 
 
 
-.navbar-nav .nav-item:hover .nav-link {
-     color: #d1d9e6; 
- }
 
-    /* Hero section styles */
-    .hero {
+ 
+ /* Hero section styles */
+ .hero {
      position: relative;
      text-align: center;
-     padding: 6.2rem 0;
-     height: 100%;
-  }
 
-  .hero-background {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
+ }
+ 
+ .hero-background {
+     position: relative;
      z-index: -1;
-     
-  }
 
-  .hero-background video {
+
+ }
+ 
+ .hero-background video {
      object-fit: fill;
      width: 100%;
      height: 100%;
-  }
 
-  .hero-buttons{
-     margin-top: 18rem;
-  }
-  
-  .hero-info{
-     color: #ffff;
-     margin-right: 1.1rem;
-  }
+ }
+ 
+ .hero-content {
+     position: absolute;
+     top: 60%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+ 
 
-  .btn-contact {
+
+ .btn-contact {
      font-size: 18px;
      padding: 10px 30px;
      background-color: #435a7d;
      color: #fff;
      text-align: center;
-  }
-
-  .btn-contact:hover {
+ }
+ 
+ .btn-contact:hover {
      font-size: 18px;
      padding: 10px 30px;
      color: #000000;
-     background-color: #d1d9e6 ;
+     background-color: #d1d9e6;
      text-align: center;
-     margin-top: 2rem;
-  }
-
-  .social-buttons {
+ }
+ 
+ .social-buttons {
      margin-top: 30px;
-  }
-
-  .btn-social {
+ }
+ 
+ .btn-social {
      font-size: 24px;
      margin: 0 10px;
-  }
+ }
 
-  .btn-social i {
-     color: #232f41;
-  }
-
-
+ .hero-info{
+     color: #ffff;
+     margin-right: 1rem;
+ }
+ 
+ .btn-social i {
+     color: #ffffff;
+ }
+ 
 
 /** banner section **/
 
 .banner {
      padding: 5rem 0;
      height: 100%;
+     margin-top: -0.5rem ;
      background-color: #d1d9e6 ;
   }
   
@@ -456,8 +399,6 @@ ul.social_icon li a:hover {
      margin-top: 10px; /* Adjust the top margin as needed */
   }
   
-
-
 
 
 .banner_main::before {
@@ -516,15 +457,14 @@ ul.social_icon li a:hover {
 
 .banner-btn{
      font-size: 18px;
-     padding: 10px 30px;
      background-color: #435a7d;
-     color: #fff;
+     color: #ffff;
      text-align: center;
+     padding: 0.8rem 0.8rem;
 }
 
 .banner-btn:hover {
      font-size: 18px;
-     padding: 10px 30px;
      color: #000000;
      background-color: #acc0e0 ;
      text-align: center;
@@ -978,6 +918,11 @@ ul.social_icon li a:hover {
      position: relative;
 }
 
+.exp_sec{
+     margin-top: 2rem;
+
+}
+
 .experts .titlepage {
      text-align: center;
      padding-bottom: 45px;
@@ -1162,7 +1107,6 @@ ul.social_icon li a:hover {
 
 .contact {
      background: #fff;
-     margin-top: 0px;
      position: relative;
 }
 
@@ -1176,9 +1120,6 @@ ul.social_icon li a:hover {
      background-image: url("../images/dots1.jpg");
      opacity: 0.1;
 }
-
-
-
 
 
 .main_form .contactus {
@@ -1238,6 +1179,7 @@ ul.social_icon li a:hover {
 ul.contac {
      text-align: center;
      margin-bottom: 55px;
+     margin-top: 1rem;
 }
 
 ul.contac li {
