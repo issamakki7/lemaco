@@ -318,21 +318,17 @@ button {
  .hero {
      position: relative;
      text-align: center;
-
  }
  
  .hero-background {
      position: relative;
      z-index: -1;
-
-
  }
  
  .hero-background video {
      object-fit: fill;
      width: 100%;
      height: 100%;
-
  }
  
  .hero-content {
@@ -344,21 +340,7 @@ button {
  
 
 
- .btn-contact {
-     font-size: 18px;
-     padding: 10px 30px;
-     background-color: #435a7d;
-     color: #fff;
-     text-align: center;
- }
- 
- .btn-contact:hover {
-     font-size: 18px;
-     padding: 10px 30px;
-     color: #000000;
-     background-color: #d1d9e6;
-     text-align: center;
- }
+
  
  .social-buttons {
      margin-top: 30px;
@@ -378,6 +360,16 @@ button {
      color: #ffffff;
  }
  
+
+ @media (max-width: 768px) {
+ .btn-contact {
+     display: none;
+ }
+ .hero-info{
+     display: none;
+ }
+ }
+
 
 /** banner section **/
 
@@ -1188,7 +1180,7 @@ ul.contac li {
      padding-bottom: 20px;
      font-size: 17px;
      display: inline-block;
-     padding-right: 70px;
+     padding-right: 2.3rem;
 }
 
 ul.contac li:last-child {
