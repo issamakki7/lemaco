@@ -368,6 +368,17 @@ button {
  .hero-info{
      display: none;
  }
+ .hero-content {
+     position: absolute;
+     display: inline-block;
+     top: 60%;
+     left: 40%;
+     transform: translate(5%, -35%);
+ }
+ 
+ 
+ 
+
  }
 
 
