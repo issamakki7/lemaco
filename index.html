@@ -31,6 +31,9 @@
    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    </head>
    <!-- body -->
    <body class="main-layout">
@@ -103,9 +106,7 @@
                            <a href="https://linkedin.com/" class="btn btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a>
                            <a href="tel:70123456" class="btn btn-social btn-phone"><i class="fa fa-phone"></i></a>
                         </div>
-                        <a href="mailto:info@lemacogroup.com" > <span class="hero-info">info@lemacogroup.com</span></a>
-                        <a href="tel:70123456" > <span class="hero-info">+961 76 123 456</span></a>
-                     
+                    
                     
                   </div>
                </div>
@@ -125,10 +126,12 @@
                </div>
                <div class="col-md-3 ">
                   <div class="banner-buttons">
+                     <a  href="projects.html" >
                      <button class="banner-btn">
-                        <a style="color: #ffff;" href="projects.html" > Explore Projects</a>
+                        Explore Projects
                       
                      </button>
+                  </a>
                   </div>
                </div>
             </div>
@@ -137,84 +140,123 @@
       
       <!-- End of Banner section -->
       
-      
-      <!-- Old banner -->
-      <!-- <section class="banner_main">
-         <div id="myCarousel" class="carousel slide banner1" data-ride="carousel" data-interval="60000">
-            <ol class="carousel-indicators">
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-               <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <div class="container-fluid">
-                     <div class="carousel-caption relative">
-                        <div class="row d_flex">
-                           <div class="col-md-8">
-                              <div class="embed-responsive embed-responsive-16by9"   >
-                                 <video class="bann_img embed-responsive-item" loop autoplay muted playsinline>
-                                    <source src="images/intro.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                 </video>
-                              </div>
-                           </div>
-                           <div class="col-md-4">
-                              <h1>Your Dream Home Awaits</h1>
-                              <p>ARROW by LEMACO</p>
-                              <a class="get_btn" href="#development" role="button">Know More</a>
-                           </div>
-                        </div>
+      <!-- About Us Section -->
+       
+        <div id="aboutus">
+
+   
+        <div class=" container-xxl py-5">
+         <div class="container">
+             <div class="row g-5">
+                 <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                     <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                         <img class="position-absolute img-fluid w-100 h-100" src="images/real.jpg" style="object-fit: cover;" alt="">
+                      
                      </div>
-                  </div>
-               </div>
-               <div class="carousel-item" >
-                  <div class="container-fluid">
-                     <div class="carousel-caption relative">
-                        <div class="row d_flex">
-                           <div class="col-md-8">
-                              <img class="bann_img" src="images/real.jpg" alt="#"/>
-                           </div>
-                           <div class="col-md-4">
-                              <span>02/03</span>
-                              <h1>Arrow Real Estate </h1>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</p>
-                              <a class="get_btn" href="Javascript:void(0)" role="button">Placeholder</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item" >
-                  <div class="container-fluid">
-                     <div class="carousel-caption relative">
-                        <div class="row d_flex">
-                           <div class="col-md-8">
-                              <img class="bann_img" src="images/real.jpg" alt="#"/>
-                           </div>
-                           <div class="col-md-4">
-                              <span>03/03</span>
-                              <h1>Arrow Real Estate</h1>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</p>
-                              <a class="get_btn" href="Javascript:void(0)" role="button">Placeholder</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                  <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-                  <span class="sr-only">Previous</span>
-               </a>
-               <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                  <span class="sr-only">Next</span>
-               </a>
-            </div>
+                 </div>
+                 <div class="col-lg-6">
+                     <h6 class="text-primary text-uppercase about-header">Who We Are</h6>
+                     <h1 class="mb-4"><span class="text-primary about-title">Lemaco</span> </h1>
+                     <p class="mb-4">LEMACO’s core services can be divided into 3 main categories,
+                         namely: public and private buildings’ construction; roads, infrastructure and civil works; and
+                          water projects and dams’ construction. Today, the company stands as a major player in the 
+                          public construction industry in Lebanon with a rock-solid reputation for reliability, quality services, 
+                          international standards and credibility.</p>
+                    
+                     <a href="/partners.html" class="about-btn">Read More  <i class="fa fa-arrow-right ms-3"></i></a>
+                 </div>
+             </div>
          </div>
-      </section> -->
-      <!-- end of old banner -->
-      
+     </div>
+   </div>
+
+    <!-- Facts Carousel Start -->
+
+  <div class="owl-carousel">
+ 
+   <!-- Placeholder slides -->
+   <div class="item">
+      <h1>100+ </h1>
+      <p>Projects </p>
+  </div>
+  <div class="item">
+   <h1>10+ </h1>
+   <p>Years Experience</p>
+  </div>
+  <div class="item">
+   <h1>24/7</h1>
+   <p>Support</p>
+  </div>
+  <div class="item">
+   <h1>50+ </h1>
+   <p>Team Members</p>
+  </div>
+ 
+
+</div>
+
+
+
+ <!-- Facts Carousel End -->
+ 
+
+      <!-- End of About Us Section -->
+
+  
+<!-- Clients Owl Carousel -->
+  <h1 class="owl-title">Our Clients</h1>
+  <div class="owl-carousel">
+ 
+   <!-- Placeholder slides -->
+   <div class="client-item">
+       <img src="images/logo1.jpg" alt="Placeholder Slide 1">
+     
+   </div>
+   <div class="client-item">
+       <img src="images/logo2.png" alt="Placeholder Slide 2">
+
+   </div>
+   <div class="client-item">
+       <img src="images/logo3.png" alt="Placeholder Slide 3">
+ 
+   </div>
+   <div class="client-item">
+       <img src="images/logo4.webp" alt="Placeholder Slide 4">
+ 
+   </div>
+   <div class="client-item">
+       <img src="images/logo5.png" alt="Placeholder Slide 5">
+  
+   </div>
+   <div class="client-item">
+       <img src="images/logo6.png" alt="Placeholder Slide 6">
+
+   </div>
+   <div class="client-item">
+      <img src="images/logo7.png" alt="Placeholder Slide 7">
+
+  </div>
+  <div class="client-item">
+   <img src="images/logo8.jpg" alt="Placeholder Slide 8">
+ 
+</div>
+<div class="client-item">
+   <img src="images/logo9.png" alt="Placeholder Slide 9">
+  
+</div>
+<div class="client-item">
+   <img src="images/logo10.png" alt="Placeholder Slide 10">
+</div>
+<div class="client-item">
+   <img src="images/logo11.png" alt="Placeholder Slide 11">
+</div>
+
+</div>
+
+<!-- Clients Owl Carousel End -->
+
+ 
+
       
       <!-- Project Development -->
       <div id="development" class="about">
@@ -849,29 +891,8 @@
 
                            </ul>
                         </div>
-                        <div class=" col-md-4 col-sm-6">
-                           <h3>Project Development </h3>
-                           <p class="variat"> We, LEMACO INTERNATIONAL LTD, are a construction and development company established
-                              in Cyprus between Engineer Abdo Sukarieh and Lawyer Andre Bou Chaaya.  </p>
-                        </div>
-                        <div class=" col-md-4 col-sm-6">
-                           <h3>Real Estate  </h3>
-                           <p class="variat" >Lemaco is recognized as an international-standard partner of choice for construction projects of national scale initiated by different Lebanese Ministries, the UN, the USAID, Arab Funds, the European community and key NGOs. 
-                           </p>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                           <h3>Useful Links</h3>
-                           <ul class="link_menu">
-                              <li class="active"><a href="index.html">Home</a></li>
-                              <li><a href="projects.html"> Projects</a></li>
-                              <li><a href="properties.html">Properties</a></li>
-                              <li><a href="development.html">Project Development</a></li>
-                              <li><a href="realestate.html">Real Estate</a></li>
-                              <li><a href="partners.html">Our Partners</a></li>
-                              <li><a href="contact.html">Contact Us</a></li>
-                           </ul>
-                        </div>
-                        
+                 
+                     
                      </div>
                   </div>
                   
@@ -885,6 +906,26 @@
             <!-- sidebar -->
             <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
             <script src="js/custom.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+     
+           <script>
+            $(document).ready(function () {
+                $(".owl-carousel").owlCarousel({
+                    items: 3, // Number of items to display at a time
+                    loop: true, // Enable loop
+                    autoplay: true, // Autoplay the carousel
+                    autoplayTimeout: 3000, // Autoplay interval in milliseconds
+                    autoplayHoverPause: true, // Pause autoplay on hover
+
+                });
+        
+             
+            });
+        </script>
+
+
+        
             <script>
                var videoElement = document.querySelector('.embed-responsive-item');
                
@@ -931,6 +972,9 @@
                   document.getElementById("contact-link").classList.add("active");
                }
             </script>
+
+             <!-- Add the following JavaScript code to automatically slide every 3 seconds -->
+
             
          </body>
          </html>

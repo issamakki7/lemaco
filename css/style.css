@@ -266,13 +266,14 @@ button {
  /* Navbar Links */
  .navbar-nav .nav-link {
      font-size: 16px;
-     color: #2b2b2b; /* Link text color */
+     font-weight: 700;
+     color: #2b2b2b;
      padding: 10px 20px;
      transition: background-color 0.3s ease;
  }
  
  .navbar-nav .nav-link:hover {
-     background-color: #d1d9e6; /* Change this color for link hover effect */
+     background-color: #f0f6f8; /* Change this color for link hover effect */
      border-radius: 5px; /* Rounded corners on hover */
      color: #ffff;
  }
@@ -347,10 +348,7 @@ button {
      margin: 0 0.4rem;
  }
 
- .hero-info{
-     color: #ffff;
-     margin-right: 1rem;
- }
+
  
  .btn-social i {
      color: #ffffff;
@@ -361,10 +359,7 @@ button {
      .btn-contact {
        display: none;
      }
-     .hero-info {
-       display: none;
-       margin: 0;
-     }
+
      .hero-content {
        position: absolute;
        transform: translate(-50%, -5%);
@@ -392,12 +387,12 @@ button {
      padding: 5rem 0;
      height: 100%;
      margin-top: -0.5rem ;
-     background-color: #d1d9e6 ;
+     background-color: #0d5eaf ;
   }
   
   .banner h1  {
      font-size: 2.5rem; /* Adjust the font size as needed */
-     color: #333; /* Adjust the text color as needed */
+     color: #ffffff; /* Adjust the text color as needed */
      padding: 20px; /* Add padding to center the text vertically */
      margin: 0; /* Remove any default margin */
   }
@@ -443,45 +438,33 @@ button {
      padding-bottom: 70px;
 }
 
-.get_btn {
-     background-color: #435a7d;
-     color: #fff;
-     text-align: center;
-     max-width: 216px;
-     width: 100%;
-     height: 40px;
-     font-size: 17px;
-     display: block;
-     padding: 4px 0;
-}
 
-.get_btn:hover {
-     color: #000000;
-     background-color: #d1d9e6 ;
-}
 
 
 
 .banner-btn{
      font-size: 18px;
-     background-color: #435a7d;
-     color: #ffff;
+     background-color: #f0f6f8;
+     color: #2b2b2b;
      text-align: center;
      padding: 0.8rem 0.8rem;
+     border-radius: 0.5rem;
 }
 
 .banner-btn:hover {
      font-size: 18px;
-     color: #000000;
-     background-color: #acc0e0 ;
+     color: #ffffff;
+     background-color: #2b2b2b  ;
      text-align: center;
   }
+
+ 
 
 #myCarousel .carousel-control-prev,
 #myCarousel .carousel-control-next {
      width: 55px;
      height: 55px;
-     background: #435a7d;
+     background: #0d5eaf;
      opacity: 1;
      font-size: 20px;
      color: #ffffff;
@@ -493,7 +476,7 @@ button {
 #myCarousel .carousel-control-prev:focus,
 #myCarousel .carousel-control-next:focus {
      background: #ececec;
-     color: #435a7d;
+     color: #0d5eaf;
 }
 
 #myCarousel .carousel-control-prev {
@@ -509,7 +492,7 @@ button {
      width: 20px;
      height: 20px;
      border-radius: 30px;
-     background: #435a7d;
+     background: #0d5eaf;
 }
 
 .carousel-indicators {
@@ -523,6 +506,86 @@ button {
  }
 
 /** end banner section **/
+
+/* About us */
+
+
+#aboutus {
+     position: relative;
+   }
+   
+   #aboutus::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(67, 90, 125, 0.5); /* Color with 50% opacity */
+     pointer-events: none; /* Allow interactions with content beneath */
+   }
+   
+   /* Customize the dots background here */
+   #aboutus::before {
+     background-image: url("../images/dotsnew.jpg");
+     opacity: 0.13;
+   }
+
+
+.about-header{
+     color: #0d5eaf;
+}
+
+.about-title{
+     color: #0d5eaf;
+}
+
+
+.about-btn{
+     padding: 0.7rem 1.1rem;
+     background-color: #0d5eaf;
+     color: #ffffff;
+     border: 1px solid #0d5eaf;
+     border-radius: 5px;
+}
+
+.about-btn:hover{
+     background-color: #f0f6f8;
+     border: 1px solid #f0f6f8;
+     color: #2b2b2b;
+}
+
+
+
+#facts-carousel{
+     background-color: #0d5eaf;
+}
+
+
+.owl-title{
+     text-align: center;
+     font-size: 3rem;
+     margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+     .owl-title {
+         font-size: 2rem;
+     }
+ }
+ 
+
+.item{
+     margin-right: -3rem;
+}
+
+.client-item{
+     width: 50%;
+     background-color: #ffff;
+}
+
+
+/* End of About Us */
 
 
 
@@ -545,9 +608,9 @@ button {
    
    /* Customize the dots background here */
    #development::before {
-     background-image: url("../images/dots2.svg");
+     background-image: url("../images/dotsnew.jpg");
      /* background-size: 30px 30px; */
-     opacity: 0.2;
+     opacity: 0.1;
    }
 
    
@@ -562,7 +625,7 @@ button {
 
 .titlepage h2 {
      font-size: 45px;
-     color: #435a7d;
+     color: #0d5eaf;
      line-height: 45px;
      font-weight: bold;
      padding: 0;
@@ -574,6 +637,7 @@ button {
      display: block;
      align-items: center;
      width: 100%;
+ 
 }
 
 .d_flex {
@@ -632,8 +696,8 @@ button {
    
    /* Customize the dots background here */
    #projects::before {
-     background-image: url("../images/dots2.svg");
-     opacity: 0.2;
+     background-image: url("../images/dotsnew.jpg");
+     opacity: 0.1;
    }
 
    .projects-title{
@@ -644,7 +708,7 @@ button {
    .projects-title h2{
      position: relative;
      font-size: 45px;
-     color: #435a7d;
+     color: #0d5eaf;
      line-height: 45px;
      font-weight: bold;
      padding: 2rem 0 0 0;
@@ -684,7 +748,7 @@ button {
    .properties-title h2{
      position: relative;
      font-size: 45px;
-     color: #435a7d;
+     color: #0d5eaf;
      line-height: 45px;
      font-weight: bold;
      padding: 0 0 0 0;
@@ -712,8 +776,8 @@ button {
    
    /* Customize the dots background here */
    #partners::before {
-     background-image: url("../images/dots2.svg");
-     opacity: 0.1;
+     background-image: url("../images/back1.png") ;
+     opacity: 0.15;
    }
 
  
@@ -728,7 +792,7 @@ button {
 
 .read_more {
      font-size: 17px;
-     background-color: #435a7d;
+     background-color: #0d5eaf;
      color: #fff;
      padding: 12px 0px;
      width: 100%;
@@ -741,7 +805,7 @@ button {
 }
 
 .read_more:hover {
-     background: #d1d9e6;
+     background: #f0f6f8;
      color: #000000;
      transition: ease-in all 0.2s;
 }
@@ -764,7 +828,7 @@ button {
 
 .we_box i {
      border-radius: 50%;
-     border: #435a7d solid 1px;
+     border: #0d5eaf solid 1px;
      width: 210px;
      height: 210px;
      display: flex;
@@ -784,7 +848,7 @@ button {
      font-weight: bold;
      line-height: 25px;
      padding-bottom: 5px;
-     color: #435a7d;
+     color: #0d5eaf;
      padding-top: 30px;
 }
 
@@ -952,17 +1016,17 @@ button {
 .experts .experts_box .experts_img figure img {
      width: 100%;
      transition: all .5s;
-     border-top: #d1d9e6 solid 20px;
-     border-bottom: #d1d9e6 solid 20px;
-     border-left: #d1d9e6 solid 30px;
-     border-right: #d1d9e6 solid 30px;
+     border-top: #f0f6f8 solid 20px;
+     border-bottom: #f0f6f8 solid 20px;
+     border-left: #f0f6f8 solid 30px;
+     border-right: #f0f6f8 solid 30px;
 }
 
 #exp:hover .experts_img figure img {
-     border-top: #435a7d solid 20px;
-     border-bottom: #435a7d solid 20px;
-     border-left: #435a7d solid 30px;
-     border-right: #435a7d solid 30px;
+     border-top: #0d5eaf solid 20px;
+     border-bottom: #0d5eaf solid 20px;
+     border-left: #0d5eaf solid 30px;
+     border-right: #0d5eaf solid 30px;
      cursor: pointer;
 }
 
@@ -1010,7 +1074,7 @@ button {
    
    
    .shop_section .box {
-     background-color: #d1d9e6;
+     background-color: #f0f6f8;
      position: relative;
      margin-top: 25px;
    }
@@ -1092,17 +1156,17 @@ button {
    .shop_section .btn-box a {
      display: inline-block;
      padding: 10px 40px;
-     background-color: #435a7d;
+     background-color: #0d5eaf;
      color: #ffffff;
-     border: 1px solid #435a7d;
+     border: 1px solid #0d5eaf;
      border-radius: 5px;
      -webkit-transition: all .3s;
      transition: all .3s;
    }
    
    .shop_section .btn-box a:hover {
-     background-color: #d1d9e6;
-     border: 1px solid #d1d9e6;
+     background-color: #f0f6f8;
+     border: 1px solid #f0f6f8;
      color: #2b2b2b;
    }
    
@@ -1136,7 +1200,7 @@ button {
      width: 100%;
      height: 58px;
      background: #fff;
-     color: #435a7d;
+     color: #0d5eaf;
      font-size: 18px;
      font-weight: normal;
      box-shadow: 0px 0px 13px rgba(14, 14, 13, 0.17);
@@ -1158,7 +1222,7 @@ button {
 .main_form .send_btn {
      font-size: 20px;
      transition: ease-in all 0.5s;
-     background-color: #435a7d;
+     background-color: #0d5eaf;
      text-transform: uppercase;
      color: #fff;
      padding: 10px 0px;
@@ -1172,7 +1236,7 @@ button {
 }
 
 .main_form .send_btn:hover {
-     background-color: #d1d9e6;
+     background-color: #f0f6f8;
      transition: ease-in all 0.2s;
      color: #000000;
 }
@@ -1219,7 +1283,7 @@ ul.contac li a {
 /** footer **/
 
 .footer {
-     background: #435a7d;
+     background: #0d5eaf;
      padding-top: 60px;
      text-align: center;
 }
@@ -1275,7 +1339,7 @@ ul.link_menu li {
 }
 
 ul.link_menu li.active a {
-     color: #d1d9e6;
+     color: #f0f6f8;
 }
 
 ul.link_menu li a {
@@ -1287,7 +1351,7 @@ ul.link_menu li a {
 }
 
 ul.link_menu li a:hover {
-     color: #d1d9e6;
+     color: #f0f6f8;
 }
 
 .bottom_form {
@@ -1324,7 +1388,7 @@ ul.link_menu li a:hover {
 .right_btn {
      font-size: 17px;
      transition: ease-in all 0.5s;
-     background-color: #d1d9e6;
+     background-color: #f0f6f8;
      color: #fff;
      padding: 8px 16px;
      font-weight: 500;
@@ -1337,7 +1401,7 @@ ul.link_menu li a:hover {
 .right_btn:hover {
      background-color: #ddd;
      transition: ease-in all 0.5s;
-     color: #d1d9e6;
+     color: #f0f6f8;
 }
 
 .bottom_form p {
@@ -1367,7 +1431,7 @@ ul.link_menu li a:hover {
 }
 
 .copyright a:hover {
-     color: #d1d9e6;
+     color: #f0f6f8;
 }
 
 
@@ -1377,7 +1441,7 @@ ul.link_menu li a:hover {
 /** endinner page css **/
 
 .back_re {
-     background-color: #d1d9e6;
+     background-color: #f0f6f8;
 }
 
 .back_re .title {
@@ -1413,7 +1477,7 @@ ul.link_menu li a:hover {
    .dot {
      width: 8px;
      height: 8px;
-     background-color: #435a7d; /* Color of the dots */
+     background-color: #0d5eaf; /* Color of the dots */
      border-radius: 50%;
      position: absolute;
      opacity: 0.9;
