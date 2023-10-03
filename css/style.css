@@ -252,30 +252,29 @@ button {
 /* Navbar */
 /* Navbar Background Color and Text Color */
 .navbar {
-     background-color: #ffff; /* Change this color to your desired background color */
-     color: #fff; /* Text color */
+     background-color: #0d5eaf; /* Change this color to your desired background color */
+     color: #ffffff; /* Text color */
  }
  
  /* Navbar Brand (Logo) */
  .navbar-brand {
      font-size: 14px;
      font-weight: bold;
-     color: #fff; /* Logo text color */
+     color: #ffff; /* Logo text color */
  }
  
- /* Navbar Links */
  .navbar-nav .nav-link {
      font-size: 16px;
      font-weight: 700;
-     color: #2b2b2b;
+     color: #ffffff !important; /* Set the text color to white with !important */
      padding: 10px 20px;
      transition: background-color 0.3s ease;
  }
  
  .navbar-nav .nav-link:hover {
-     background-color: #f0f6f8; /* Change this color for link hover effect */
+     background-color: #477cb0; /* Change this color for link hover effect */
      border-radius: 5px; /* Rounded corners on hover */
-     color: #ffff;
+     color: #ffffff !important;
  }
  
  /* .navbar-toggler{
@@ -299,7 +298,7 @@ button {
  
  /* Active Link Styles */
  .navbar-nav .nav-item.active .nav-link {
-     background-color: #2e3034; /* Change this color for active link */
+     background-color: #ffff; /* Change this color for active link */
      border-radius: 5px; /* Rounded corners for active link */
  }
  
@@ -310,7 +309,41 @@ button {
      }
  }
  
-
+/* Dropdown Styles */
+.dropdown-menu {
+     background-color: #ffffff; /* Background color of the dropdown menu */
+     border: 1px solid #3a6fa4; /* Border color */
+     border-radius: 5px; /* Rounded corners */
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Drop shadow */
+     transition: all 0.6s ease;
+     border-radius: 1rem;
+ }
+ 
+ .dropdown-menu a {
+     color: #333; /* Link text color */
+     transition: color 0.3s ease, background-color 0.3s ease; /* Smooth color transition */
+ }
+ 
+ .dropdown-menu a:hover {
+     background-color: #3a6fa4; /* Hover background color */
+     color: #ffffff; /* Hover link text color */
+ }
+ 
+ /* Dropdown Arrow Icon */
+ .navbar-toggler-icon::before {
+     content: "\25BC"; /* Downward-pointing triangle */
+     font-size: 0.75rem;
+     vertical-align: middle;
+     display: inline-block;
+     transform: translateY(-1px); /* Adjust vertical alignment */
+     transition: transform 0.3s ease; /* Smooth transition for the arrow */
+ }
+ 
+ /* Rotate the arrow when the dropdown is open */
+ .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+     transform: translateY(-1px) rotate(180deg);
+ }
+ 
 
 
 
@@ -637,7 +670,6 @@ button {
      display: block;
      align-items: center;
      width: 100%;
- 
 }
 
 .d_flex {
@@ -1177,19 +1209,8 @@ button {
 /** contact section **/
 
 .contact {
-     background: #fff;
+     background: #ffff;
      position: relative;
-}
-
-.contact::before {
-     content: "";
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-image: url("../images/dots1.jpg");
-     opacity: 0.1;
 }
 
 
