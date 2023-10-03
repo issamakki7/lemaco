@@ -589,6 +589,21 @@ button {
 }
 
 
+.realestate-btn{
+     padding: 0.7rem 1.1rem;
+     background-color: #0d5eaf;
+     color: #ffffff;
+     border: 1px solid #0d5eaf;
+     border-radius: 5px;
+     margin-bottom: 1rem;
+}
+
+.realestate-btn:hover{
+     background-color: #f0f6f8;
+     border: 1px solid #f0f6f8;
+     color: #2b2b2b;
+}
+
 
 #facts-carousel{
      background-color: #0d5eaf;
@@ -599,6 +614,7 @@ button {
      text-align: center;
      font-size: 3rem;
      margin-bottom: 2rem;
+     margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
