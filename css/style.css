@@ -258,6 +258,7 @@ button {
  
  /* Navbar Brand (Logo) */
  .navbar-brand {
+     width: 20%;
      font-size: 14px;
      font-weight: bold;
      color: #ffff; /* Logo text color */
@@ -828,6 +829,15 @@ button {
      opacity: 0.15;
    }
 
+
+   .experts-box-container {
+     display: flex;
+     flex-direction: column;
+  }
+  
+  .experts-box-container .meet {
+     flex: 1; /* This will make them take equal height */
+  }
  
 
 
